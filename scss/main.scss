@@ -1,6 +1,88 @@
 @import "variables";
 @import "mixins";
-@import "normalize";
 @import "fonts";
 @import "general";
 @import "blocks/blocks";
+
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+
+/*Header section starts*/
+.navbar{
+    padding: 40px 20px;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo img{
+        width: 100%;
+    }
+
+    &__list{
+        display: flex;
+        opacity: 1;
+        @include list-unstyled;
+        transition: all .3s ease;
+    }
+
+    &__item{
+        margin-right: 2rem;
+
+        .navbar__link{
+            text-decoration: none;
+            color: $nav-color;
+            font-weight: $barlow-bold;
+            text-transform: uppercase;
+            letter-spacing: 0.92px;
+
+            &:hover{
+                color: #333D4B;
+                transition: all .3s ease;
+
+            }
+        }
+    }
+    
+    .menu i{
+        display: none;
+        font-size: 25px;
+    }
+}
+.hero__content{
+    background-image: url(../images/hero-bg.svg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    margin-top: 100px;
+    padding-top: 80px;
+
+    .desc{
+        padding-right: 3.5rem;
+    }
+    .title{
+        font-family: "Fraunces";
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 72px;
+        color: $light-title;
+        margin-bottom: 2rem;
+    }
+    .text{
+        font-family: Barlow;
+        font-size: 16px;
+        line-height: 26px;
+        color: $light-title;
+        opacity: 0.8;
+        margin-bottom: 3.5rem;
+    }
+    .cry-btn{
+        @include btn-green;
+    }
+}

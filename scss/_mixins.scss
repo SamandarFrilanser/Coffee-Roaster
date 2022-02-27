@@ -3,3 +3,10 @@
   margin: 0;
   list-style: none;
 }
+@mixin btn-green {
+    background: $cyan-btn;
+    color: $light-title;
+    border-radius: 6px;
+    padding: 15px 31px;
+    text-decoration: none;
+}

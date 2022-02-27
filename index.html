@@ -1,23 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/flexboxgrid.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
-    <link rel="stylesheet" href="css/main.min.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lesson</title>
+        <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/flexboxgrid.min.css" />
+        <link rel="stylesheet" href="css/main.min.css" />
+        <link rel="stylesheet" href="css/media.css">
+    </head>
 
-  <body>
-    <script src="js/main.js"></script>
-  </body>
+    <body>
+
+        <div id="hero">
+            
+                <header class="header">
+                    
+                    <nav class="navbar"> 
+                        <div class="navbar__logo">
+                            <img src="images/logo.svg" alt="logo">
+                        </div>
+                        <div class="menu" id="menu">
+                            <i class='bx bx-menu' style='color:#333d4b'></i>
+                        </div>
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">
+                                    Create your plan
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                
+                </header>
+            
+                <div class="hero__content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 desc">
+                                <h2 class="title">
+                                    Great coffee made simple.
+                                </h2>
+
+                                <p class="text">
+                                    Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.
+                                </p>
+
+                                <a href="#" class="cry-btn">Create your plane</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+        <script src="js/main.js"></script>
+    </body>
+
 </html>
