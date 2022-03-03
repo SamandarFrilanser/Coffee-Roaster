@@ -285,6 +285,10 @@ img {
   margin: 0 0 1.5rem 0;
 }
 
+.section-bottom {
+  margin-top: 10rem;
+}
+
 .section-bottom .btn-cyan {
   background: #0E8784;
   color: #FEFCF7;
