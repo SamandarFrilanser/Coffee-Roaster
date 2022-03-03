@@ -9,4 +9,29 @@
     border-radius: 6px;
     padding: 15px 31px;
     text-decoration: none;
+    font-family: "Fraunces";
+  transition: all 0.3s ease;
+    &:hover{
+      background-color: $main-hover;
+    }
+}
+@mixin centered {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: $light-title;
+
+  .title{
+    font-family: Fraunces;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    
+  }
+  .text{
+    font-family: Barlow;
+    opacity: 0.8;
+    line-height: 26px;
+  }
 }
